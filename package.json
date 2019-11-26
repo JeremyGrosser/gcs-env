@@ -1,0 +1,23 @@
+{
+  "name": "gcs-env",
+  "version": "1.0.3",
+  "description": "Load environment variables from a Google Cloud Storage bucket",
+  "main": "main.js",
+  "author": "Jeremy Grosser <jeremy@synack.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/JeremyGrosser/gcs-env",
+  "repository": {
+      "url": "https://github.com/JeremyGrosser/gcs-env",
+      "type": "git"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^4.1.3",
+    "cross-env": "^6.0.3",
+    "cross-spawn": "^7.0.1",
+    "got": "^9.6.0",
+    "yargs": "^15.0.2"
+  },
+  "bin": {
+    "gcs-env": "./main.js"
+  }
+}
