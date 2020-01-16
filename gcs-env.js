@@ -54,7 +54,7 @@ function config(bucket, environment) {
             return gcsEnvironmentVariables(bucket, projectId)
                 .then(stringifyEnvironment);
         }).catch(err => {
-            console.error('gcs-env: Failed to connect to the metadata service');
+            console.error('gcs-env: Failed to connect to the metadata service', err);
         });
     }
 }
