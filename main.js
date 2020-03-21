@@ -20,6 +20,8 @@ gcs_env.config(argv.bucket, argv.environment).then(env => {
     if(env) {
         spawn('cross-env', [...env, ...(argv._)], {
             stdio: 'inherit',
+        }).on('exit', code => {
+            process.exit(code)
         });
     }else{
         console.error('gcs-env: Unable to determine projectId and no environment was specified, aborting');
