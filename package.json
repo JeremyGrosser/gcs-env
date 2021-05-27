@@ -1,6 +1,6 @@
 {
   "name": "gcs-env",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Load environment variables from a Google Cloud Storage bucket",
   "main": "main.js",
   "author": "Jeremy Grosser <jeremy@synack.me>",
